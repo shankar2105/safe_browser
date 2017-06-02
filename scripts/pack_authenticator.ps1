@@ -4,7 +4,7 @@ if ( $args[0] ) {
 }
 git submodule update --init --recursive
 
-$DEST_FOLD = "../app/node_modules/beaker-plugin-safe-authenticator"
+$DEST_FOLD = "..\\app\\node_modules\\beaker-plugin-safe-authenticator"
 
 cd authenticator
 
@@ -23,4 +23,5 @@ for ($i=0; $i -lt $FILES_ARR.length; $i++) {
 	Copy-Item $FILES_ARR[$i] $DEST_FOLD -Recurse -Force
 }
 
-Rename-Item "$(DEST_FOLD)/_package.json" "$(DEST_FOLD)/package.json"
+Rename-Item ("$DEST_FOLD\\_package.json") package.json
+Remove-Item _package.json

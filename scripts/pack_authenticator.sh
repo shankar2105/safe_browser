@@ -22,3 +22,4 @@ done
 
 mv $DEST_FOLD"/_package.json" $DEST_FOLD"/package.json"
 
+rm -rf _package.json
