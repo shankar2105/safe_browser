@@ -27,7 +27,7 @@
   },
   "build": {
     "category": "public.app-category.productivity",
-    "copyright": "© 2016, Josh Wilson",
+    "copyright": "© 2017, MaidSafe.net Ltd",
     "npmRebuild": false,
     "asar": false,
     "dmg": {
@@ -108,6 +108,7 @@
     "pack-authenticator": "node ./scripts/main.js --authenticator"
   },
   "dependencies": {
+    "fs-extra": "^3.0.1",
     "rollup-plugin-async": "^1.1.0"
   }
 }
