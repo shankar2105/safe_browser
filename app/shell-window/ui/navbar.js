@@ -75,6 +75,7 @@ ipcRenderer.on('onContainerReq', function(event, data) {
 });
 
 ipcRenderer.on('onAuthDecisionRes', function(event, data) {
+  console.log(data)
   isSafeAppAuthenticating = false
   if (data.type === CLIENT_TYPES.WEB) {
     ipcRenderer.send('webClientAuthRes', data.res);
@@ -308,14 +309,14 @@ function render (id, page) {
       </button>`
     : yo`<button class="toolbar-btn ${(function() {
       if (safeAuthNetworkState === 0) {
-        return 'connecting'
-      } else if (safeAuthNetworkState === 1) {
         return 'connected'
+      } else if (safeAuthNetworkState === -1) {
+        return 'connecting'
       } else if (safeAuthNetworkState === 2) {
         return 'terminated'
       }
     })()}" onclick=${onClickOpenSafeAuthHome}>
-        <span class="icon icon-rocket"></span>
+        <span class="icon"></span>
       </button>`
 
   // render safe btn
