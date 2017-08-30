@@ -119,7 +119,7 @@ ipcRenderer.on('onSharedMDataRes', function(event, res) {
 
 ipcRenderer.on('onAuthResError', function(event, res) {
   isSafeAppAuthenticating = false
-  if (res && res.error && res.error.message && (res.error.message.toLowerCase() === 'unauthorised')) {
+  if (res && res.error && (res.error.toLowerCase() === 'unauthorised')) {
     onClickOpenSafeAuthHome()
   }
   if (res.type === CLIENT_TYPES.WEB) {

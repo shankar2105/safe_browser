@@ -44,7 +44,7 @@ ipcMain.on('webClientAuthRes', (event, response) => {
 
   if( event.sender == authTargetContents )
   {
-    if (response && response.uri.indexOf('safe-') == 0) {
+    if (response && response.res.indexOf('safe-') == 0) {
       store.dispatch(receiveResponse(response));
       store.dispatch( getConfig() );
     } else {
