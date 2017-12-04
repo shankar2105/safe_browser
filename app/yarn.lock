@@ -2,13 +2,14 @@
 # yarn lockfile v1
 
 
-"@maidsafe/safe-node-app@0.5.2":
+"@maidsafe/safe-node-app@https://github.com/shankar2105/safe_app_nodejs.git#webfetch_with_mime":
   version "0.5.2"
-  resolved "https://registry.yarnpkg.com/@maidsafe/safe-node-app/-/safe-node-app-0.5.2.tgz#9f88116d248e08df6ffb0ccd200b2849168587b5"
+  resolved "https://github.com/shankar2105/safe_app_nodejs.git#f3d425c013d2c5d973ad7f7d2ea4b4f70882d5b0"
   dependencies:
     deps_downloader "https://s3.eu-west-2.amazonaws.com/deps-downloader/deps_downloader-0.1.0.tgz"
     enum "^2.3.0"
     ffi "^2.2.0"
+    mime "^2.0.3"
     ref "^1.3.3"
     ref-array "^1.2.0"
     ref-struct "^1.1.0"
@@ -430,11 +431,11 @@ bcrypt-pbkdf@^1.0.0:
   dependencies:
     tweetnacl "^0.14.3"
 
-"beaker-plugin-safe-app@https://s3.eu-west-2.amazonaws.com/beaker-plugin-safe-app/beaker-plugin-safe-app-0.4.2.tgz":
+"beaker-plugin-safe-app@https://github.com/shankar2105/beaker-plugin-safe-app.git#path_mime_fix_nxt":
   version "0.4.2"
-  resolved "https://s3.eu-west-2.amazonaws.com/beaker-plugin-safe-app/beaker-plugin-safe-app-0.4.2.tgz#27e08f011200cbdf19be71df24a1df7860d6f872"
+  resolved "https://github.com/shankar2105/beaker-plugin-safe-app.git#2816c31e4e9323ef6951431b542bc47ac98992f8"
   dependencies:
-    "@maidsafe/safe-node-app" "0.5.2"
+    "@maidsafe/safe-node-app" "https://github.com/shankar2105/safe_app_nodejs.git#webfetch_with_mime"
     css-loader "^0.28.4"
     ejs-loader "^0.3.0"
     mime "^1.3.4"
@@ -791,8 +792,8 @@ caniuse-api@^1.5.2:
     lodash.uniq "^4.5.0"
 
 caniuse-db@^1.0.30000529, caniuse-db@^1.0.30000634, caniuse-db@^1.0.30000639:
-  version "1.0.30000769"
-  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000769.tgz#c230b9c1b9e8db3e1c0d858c96e685741b96cc10"
+  version "1.0.30000778"
+  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000778.tgz#167c60e9542a2aa60537c446fb3881d853a3072a"
 
 capture-stack-trace@^1.0.0:
   version "1.0.0"
@@ -2911,8 +2912,8 @@ isstream@~0.1.2:
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
 
 js-base64@^2.1.9:
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.3.2.tgz#a79a923666372b580f8e27f51845c6f7e8fbfbaf"
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.4.0.tgz#9e566fee624751a1d720c966cd6226d29d4025aa"
 
 js-tokens@^3.0.0, js-tokens@^3.0.2:
   version "3.0.2"
@@ -3437,9 +3438,17 @@ mime-types@^2.1.12, mime-types@~2.1.11, mime-types@~2.1.15, mime-types@~2.1.16, 
   dependencies:
     mime-db "~1.30.0"
 
-mime@1.4.1, mime@^1.3.4:
+mime@1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/mime/-/mime-1.4.1.tgz#121f9ebc49e3766f311a76e1fa1c8003c4b03aa6"
+
+mime@^1.3.4:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/mime/-/mime-1.6.0.tgz#32cd9e5c64553bd58d19a568af452acff04981b1"
+
+mime@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/mime/-/mime-2.0.3.tgz#4353337854747c48ea498330dc034f9f4bbbcc0b"
 
 min-document@^2.19.0:
   version "2.19.0"
@@ -4112,8 +4121,8 @@ postcss-minify-selectors@^2.0.4:
     postcss-selector-parser "^2.0.0"
 
 postcss-modules-extract-imports@^1.0.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/postcss-modules-extract-imports/-/postcss-modules-extract-imports-1.1.0.tgz#b614c9720be6816eaee35fb3a5faa1dba6a05ddb"
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/postcss-modules-extract-imports/-/postcss-modules-extract-imports-1.2.0.tgz#66140ecece38ef06bf0d3e355d69bf59d141ea85"
   dependencies:
     postcss "^6.0.1"
 

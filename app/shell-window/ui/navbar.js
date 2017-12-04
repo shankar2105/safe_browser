@@ -953,7 +953,7 @@ function onKeydownLocation (e) {
       }
 
       var selectionUrl = selection.url
-      if (!path.extname(selectionUrl)) {
+      if ((selectionUrl.subStr(-1) !== '/') && !path.extname(selectionUrl)) {
         selectionUrl = selectionUrl.replace(/\/?(\?|#|$)/, '/$1');
       }
 
